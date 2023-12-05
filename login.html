@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <title>login</title>
+</head>
+<body>
+    <form method="post" onsubmit="myaction.collect_data(event,'login')">
+    <div class="col-md-6 border rounded mx-auto mt-5 p-4 shadow">
+        
+        <div class="h2">Login</div>
+
+        <div><small class="my-1 js-error js-error-email text-danger"></small></div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text p-3" id="basic-addon1">@</span>
+            <input name="email" type="email" class="form-control" placeholder="Email" name="email" >
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text p-3" id="basic-addon1">@</span>
+            <input name="password" type="password" class="form-control" placeholder="Password" name="password" >
+        </div>
+        <div class="progress my-3 d-none" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 25%">25%</div>
+        </div>
+          <button class="btn btn-primary col-12">Login</button>
+          <div class="m-2">
+            Don't have an account? <a href="register.html">Register here</a>
+        </div>
+    </div>
+</form>
+</body>
+</html>
+<script type="text/javascript" src="./js/login.js" async></script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-icons.css">
+    <link rel="stylesheet" href="./CSS/profile.css">
+  </head>
+  <body>
+    <div class="row col-lg-8 border rounded mx-auto mt-5 p-2 shadow-lg">
+        <div class="col-md-4 text-center image">
+            <img src="https://th.bing.com/th/id/OIP.eXWcaYbEtO2uuexHM8sAwwHaHa?rs=1&pid=ImgDetMain " class="img-fluid rounded">
+            <div>
+                <a href="./php/edit.php"><button class="mx-auto m-2 btn-sm btn btn-primary">Edit</button></a>
+                <!-- <a href="delete.html"><button class="mx-auto m-2 btn-sm btn btn-warning text-white">Delete</button></a> -->
+                <a href="logout.html"><button class="mx-auto m-2 btn-sm btn btn-info text-white">Logout</button></a>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="h2">Profile</div>
+            <table class="table table-striped">
+                <tr><th colspan="2">User Details </th></tr>
+                <tr><th>Email</th><td class="email">email@gamil.com</td></tr>
+                <tr><th>First name</th><td class="firstname">John</td></tr>
+                <tr><th>Last name</th><td class="lastname">Charan</td></tr>
+                <tr><th>Gender</th><td class="gender">Male</td></tr>
+                <tr><th>Age</th><td class="dob">36</td></tr>
+            </table>
+        </div>
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="./js/profile.js" async></script>

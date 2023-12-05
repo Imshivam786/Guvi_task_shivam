@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <title>Register</title>
+</head>
+<body>
+    <form method="post" onsubmit="myaction.collect_data(event,'register')">
+    <div class="col-md-8 col-lg-4 border rounded mx-auto mt-5 p-4 shadow">
+        
+        <div class="h2">Register</div>
+
+        <div class="input-group mt-3">
+            <span class="input-group-text p-3" id="basic-addon1">@</span>
+            <input name="firstname" type="text" class="form-control" placeholder="First Name" >
+        </div>
+        <div><small class="js-error js-error-firstname text-danger"></small></div>
+
+        <div class="input-group mt-3">
+            <span class="input-group-text p-3" id="basic-addon1">@</span>
+            <input name="lastname" type="text" class="form-control" placeholder="Last Name" >
+        </div>
+        <div><small class="js-error js-error-lastname text-danger"></small></div>
+        
+        <div class="input-group mt-3">
+            <span class="input-group-text p-3" id="basic-addon1">@</span>
+            <select class="form-select form-select mb-3" name="gender">
+                <option selected value="">--Select Gender</option>
+                <option >Male</option>
+                <option >Female</option>
+                <option >Other</option>
+            </select>
+        </div>
+        <div><small class="js-error js-error-gender text-danger"></small></div>
+        
+        <div class="input-group mt-3">
+            <span class="input-group-text p-3" id="basic-addon1">@</span>
+            <input name="email" type="email" class="form-control" placeholder="Email" >
+        </div>
+        <div><small class="js-error js-error-email text-danger"></small></div>
+        
+        <div class="input-group mt-3">
+            <span class="input-group-text p-3" id="basic-addon1">@</span>
+            <input name="password" type="text" class="form-control" placeholder="Password" >
+        </div>
+        <div><small class="js-error js-error-password text-danger"></small></div>
+        
+        <div class="input-group mt-3">
+            <span class="input-group-text p-3" id="basic-addon1">@</span>
+            <input name="retype_password" type="text" class="form-control" placeholder="Retype Password" >
+        </div>
+        
+        <!-- <div><small class="js-error js-error-retype_password text-danger">This is an error</small></div> -->
+        
+          <button class="btn btn-primary col-12 mt-3">Register</button>
+        <div class="progress mt-2 d-none" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 25%">25%</div>
+        </div>
+        <div class="m-2">
+          Already have an account? <a href="login.html">login here</a>
+      </div>
+    </div>
+</form>
+</body>
+</html>
+<script type="text/javascript" src="./js/register.js" async></script>
